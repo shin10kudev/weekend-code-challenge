@@ -7,22 +7,23 @@ Given an array of posts and an array of your likes, how could you effeciently ch
 ```js
 const posts = [
   {
-    id: "RrnuzUt7kFLrK9NOW--p4",
+    id: 5,
     authorId: 1,
-    content: 'abcd',
+    content: 'Post 5',
   },
   {
-    id: "iP7DBEcWgtyGS1gm69ndw",
-    content: 'efg',
+    id: 6,
+    content: 'Post 10',
     authorId: 10,
   }
   ...
 ];
 
 const likes = [
-  {id: "GKePk5jyMvq4_WK_bspQg", postId: "RrnuzUt7kFLrK9NOW--p4"},
-  {id: "jrW6r4Ta2Z4ftNRB2oaow", postId: "c4lnwlqqNosRXcuTFumH3"},
-  {id: "gwyuvYhZp0NklcvYo5uQB", postId: "DGNynY1-V2pYDZqYf__Vg"},
+  { id: 1, postId: 5 },
+  { id: 2, postId: 10 },
+  { id: 3, postId: 124 },
+  ...
 ];
 ```
 
