@@ -1,14 +1,15 @@
-# Solutions
+# Solution
 
-Honestly, there are a ton of different ways to do this, and if you check stack overflow, you will find no end to people giving advice about the problem.
+Honestly, there are a ton of ways to do this, and if you check stack overflow you will find no end to people giving advice about the problem.
 
-This is the solution I like. It is cool, easy to read, and utilizes a lot of bread and butter JavaScript techniques that are important for you to understand and know.
+This is the solution I happen to like. It is cool, easy to read, and utilizes various of "bread and butter" JavaScript techniques, which are important for you to learn and know.
 
 ## Solution 1: The long way
 
 ```js
-let ingredients = { lettuce: 0, bacon: 0, cheese: 1, meat: 4 };
-let output = Object.keys(ingredients).reduce((acc, curr) => {
+const ingredients = { lettuce: 0, bacon: 0, cheese: 1, meat: 4 };
+
+const output = Object.keys(ingredients).reduce((acc, curr) => {
   acc.push({
     name: curr,
     count: ingredients[curr],
@@ -22,8 +23,9 @@ let output = Object.keys(ingredients).reduce((acc, curr) => {
 This will apply the same methodology as before, but we can tighten things up by using the `.concat()` array method:
 
 ```js
-let ingredients = { lettuce: 0, bacon: 0, cheese: 1, meat: 4 };
-let output = Object.keys(ingredients).reduce(
+const ingredients = { lettuce: 0, bacon: 0, cheese: 1, meat: 4 };
+
+const output = Object.keys(ingredients).reduce(
   (acc, curr) =>
     acc.concat([
       {
@@ -40,8 +42,9 @@ let output = Object.keys(ingredients).reduce(
 Another short solution to keep the code clean and short:
 
 ```js
-let ingredients = { lettuce: 0, bacon: 0, cheese: 1, meat: 4 };
-let o = Object.keys(ingredients).reduce(
+const ingredients = { lettuce: 0, bacon: 0, cheese: 1, meat: 4 };
+
+const output = Object.keys(ingredients).reduce(
   (acc, curr) => [
     ...acc,
     {
