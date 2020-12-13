@@ -56,6 +56,6 @@ Assuming, you don't have any postIds of `0`, if the key exists in the `myLikes` 
 
 For the first solution, the number of repeated operations is quite large, because for each post you have to also loop through the array of likes. Worst case scenario, none of the posts exist in the likes array, but you'd still have to loop through the entire array each time to the end of the array for each post. If the data set increased, that could be pretty costly.
 
-For the second solution, things are much better. You stil have to loop through the likes array once in order to generate the hash map, but after that you benefit from constant look-up time when you check to see if the current post id exists in the hash map or not.
+For the second solution, things are much better. You still have to loop through the likes array once in order to generate the hash map. But after that, you benefit from constant look-up time when you check to see if the current post id exists in the hash map or not.
 
 Certainly there are other ways to optimize this even more. Can you think of any other ways to solve it?
