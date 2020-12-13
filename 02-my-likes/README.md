@@ -13,8 +13,8 @@ const posts = [
   },
   {
     id: 6,
-    content: 'Post 10',
-    authorId: 10,
+    content: 'Post 6',
+    authorId: 12,
   }
   ...
 ];
