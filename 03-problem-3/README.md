@@ -11,7 +11,7 @@ data = {
 };
 ```
 
-Create a helper function that will allow you to conveniently convert your data into the following format:
+Create a helper function that will allow you to efficiently convert your data into the following format:
 
 ```js
 output = [
@@ -30,15 +30,15 @@ output = [
 ];
 ```
 
-The goal of this exercise is to convert your data into an array of objects where the `id` key for each object maps to the keys of the original object.
+As you can see, the goal of this exercise is to convert your data into an array of objects where the `id` for each object in the new array maps to the keys of the original object.
 
 ## Notes
 
-- As the original data is an object, all keys will be unique.
-- The data could be incredibly long or short, so be mindful, as always, of time complexity.
+- As the original data is an object, all keys will be unique, so you don't have to worry about duplicate entries.
+- The data could be incredibly long or short so, as always, be mindful of time complexity.
 
 ## Tips
 
-- There are many different ways you can solve this problem, and it is useful to explore each
-- Try to consider a multitude of solutions, get them working and then think about what you like about each answer
-- After you have your answer, think about how you can clean it up. That is, how can you make the code more readable while also being concise?
+- There are various ways to solve this problem, and it is useful to explore each.
+- Try to think of a multitude of solutions, get each working -- and then consider the strengths and weaknesses of each.
+- After you have your final answer, think about how you can clean it up. That is, how can you make the code more readable while also being concise?
