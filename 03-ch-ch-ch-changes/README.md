@@ -16,16 +16,16 @@ Create a helper function that will allow you to efficiently convert your data in
 ```js
 output = [
   {
-    id: 'someting',
+    id: 'something',
     title: 'something',
     copy: 'something',
     link: 'something',
   },
   {
     id: 'another',
-    title: 'something',
-    copy: 'something',
-    link: 'something',
+    title: 'another',
+    copy: 'another',
+    link: 'another',
   },
 ];
 ```
