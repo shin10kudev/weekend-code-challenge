@@ -11,7 +11,7 @@ data = {
 };
 ```
 
-Create a helper function that will allow you to efficiently convert your data into the following format:
+Create a **function** that will allow you to efficiently convert your data into the following format:
 
 ```js
 output = [
