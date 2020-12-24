@@ -1,6 +1,6 @@
 # Solution
 
-For problems like these, there are dozens upon dozens of possible answers, each with their own merits and demerits, quirks and qualities. Since our input data is an `object`, I think it is the perfect chance to utilize the various methods that exist on the object in JavaScript, and practice techniques for looping through objects.
+For problems like these, there are dozens upon dozens of possible answers, each with their own merits and demerits, quirks and qualities. Since our input data is an `object`, I think it is the perfect chance to utilize the various methods that exist on the object prototype in JavaScript, and practice techniques for looping through object data.
 
 In particular, I'd like to demonstrate how to solve this problem using `Object.keys()` + `Object.values()`, the `for... in` statement and also `Object.entries()`.
 
