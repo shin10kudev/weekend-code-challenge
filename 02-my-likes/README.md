@@ -1,4 +1,4 @@
-## Problem
+# Problem
 
 Given an array of posts and an array of your likes, how could you effeciently check if you liked a particular post or not?
 

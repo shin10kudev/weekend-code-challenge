@@ -1,4 +1,4 @@
-## Solution
+# Solution
 
 There are two solutions I'd like to share. One is a kind of brute-force, quick and dirty answer. Whereas the other solution breaks the problem down into 2 steps, providing a much more optimal one.
 
