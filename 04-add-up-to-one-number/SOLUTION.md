@@ -1,8 +1,8 @@
 # Solution
 
-I know I said there is a practical application for this algorithm -- and there is! It can be used to create a game where given a target value and a selection of random numbers, the user can chose the correct set of numbers in order to reach that target value.
+I know I said there is a practical application for this algorithm -- and there is! It can be used to create a game where, given a target value and a selection of random numbers, the user can try to find the combination of numbers to reach the target value.
 
-Of course, we would need to make sure that there is a possible route to the target, and also make it a challenging by throwing in a few random numbers. Thus we have a requirement to generate a random array of numbers, where some of those numbers can be added up to get the target value.
+Of course we need to make sure that there is a possible route to the target, and also make it a challenge by throwing in a few random numbers. Thus we have the requirement to generate a random array of numbers, where some of those numbers can be added up to get the target value.
 
 ## Helper methods
 
@@ -16,7 +16,7 @@ Now, let's get into the solutions.
 
 ## Solution 1: Subtraction method
 
-Although it is counterintuitive given the name of the function, the first method I'll introduce will involve substracting bit by bit from the target value until we have an array of random values that will definitely add up to the target value, possibly with a few extra random numbers to throw the user off.
+Although it is counterintuitive given the name of the problem, the first method I'll introduce will involve substracting bit by bit from the target value until we have an array of random values that will definitely add up to the target value, possibly with a few extra random numbers to throw the user off.
 
 ```js
 const addUpToOneNumber = (targetValue, arrayLength = 6) => {
@@ -39,7 +39,7 @@ const addUpToOneNumber = (targetValue, arrayLength = 6) => {
 };
 ```
 
-The reason this works is the block of code right here:
+The reason this works is because of the block of code right here:
 
 ```js
 if ((remainder > 0 && index < arrayLength - 1) || acc === 0) {
@@ -49,7 +49,7 @@ if ((remainder > 0 && index < arrayLength - 1) || acc === 0) {
 }
 ```
 
-I will push a random number to the array as long as the `acc` is greater than zero and there is at least one more number to add to the array. The other case is where the `acc` has reached zero, meaning I've generated a path to the targetValue. Why do I still add a random number to the array? Well, because those are meant to be fillers.
+I will push a random number to the array as long as the `acc` is greater than zero and there is at least one more number to add to the array. The other case is where the `acc` has reached zero, meaning I've generated a path to the targetValue. Why do I still add a random number to the array? Well, because I still need to add some more random numbers to the array -- although I no longer have to worry if they will help me reach the target value or not.
 
 Otherwise, I will push the current value of `acc`, which will always be the ramaining value I need in order to get the target value.
 
@@ -89,9 +89,11 @@ const addUpToOneNumber = (targetValue, arrayLength = 6) => {
 
 It may seem like `runningTotal > targetValue` is the only condition we need to watch for. However, there is one edge case where the first 5 values do not add up to the target value. In this case we only have 1 last chance to provide the number that will allow us to reach the target value.
 
+Similar to my comment earlier, I could have easily used `.reduce()` instead here, but I went with map to show how that would look.
+
 ### Solution 3: Find the missing number
 
-Another solution that comes to mind, which I won't code out for now, is a little bit more pragmatic. Basically you could generate 6 random numbers, then go through and see which one or two numbers you would need to change to generate the target value.
+Another solution that comes to mind, which I will save for you to try to code out, is perhaps a bit more expedient. Basically you could generate 6 random numbers, then go through and see which one or two numbers you would need to change to generate the target value.
 
 ## Validation helpers
 
