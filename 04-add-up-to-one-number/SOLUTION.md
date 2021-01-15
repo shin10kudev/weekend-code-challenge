@@ -103,8 +103,8 @@ I said in the problem statement that it would be a good idea to create some help
 const validateAnswer = (result, targetValue) => {
   let count = 0;
 
-  for (let j = 0; j <= result.length - 1; j++) {
-    count = count + result[j];
+  for (let i = 0; i <= result.length - 1; i++) {
+    count = count + result[i];
 
     if (count === targetValue) return true;
   }
