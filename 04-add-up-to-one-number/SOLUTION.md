@@ -57,13 +57,13 @@ Other than that, there are a few takeaways from this method that I'd like to poi
 
 ### Takeaways
 
-- `.reduce(...` | I decided to use reduce because of the way I can keep track of the method, but I could have just as easily used `.map()`. In that case I wouldn't need the `output` array, but I would need to initialize a `count` variable to keep track of my remainder.
-- `arrayLength = 6` | As you may know, you can set a default value to a function argument. Although the problem doesn't ask for this argument, since the length may change, I thought it would be could to make this a function parameter anyway.
+- `.reduce(...` | I decided to use `.reduce()` because of the way it allows us to keep track of a changing value, but I could have just as easily used `.map()`. In that case I wouldn't need the `output` array, but I would need to initialize a `count` variable to keep track of the remainder.
+- `arrayLength = 6` | As you may know, you can set a default value to a function argument. Although the problem doesn't ask for this argument, since it is used as a constant within the function, I thought it would be good to make this a parameter anyway.
 - `Array.from({ length: arrayLength }).` | This is a quick way to initialize an empty array with a set length. Combining this with `.map()` or `.reduce()` is a handy technique to keep in mind for future programming needs.
 
 ## Solution 2: Addition method
 
-I arrived at this second answer which utilizes addition after thinking of the first solution, oddly enough. This will do the opposite of what we just discussed: start with zero and add up along the way.
+This solution will do the opposite of what is done in the first method: start with zero and add up along the way.
 
 The algorithm ends in a similar fashion -- that is, by calculating the last number needed to reach the target value. In all other cases, we can simply add the new random number to the array.
 
