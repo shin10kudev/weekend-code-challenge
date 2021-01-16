@@ -32,7 +32,7 @@ const addUpToOneNumber = (targetValue, arrayLength = 6) => {
       output.push(acc);
     }
 
-    return remainder;
+    return remainder > 0 ? remainder : 0;
   }, targetValue);
 
   return output;
@@ -60,6 +60,7 @@ Other than that, there are a few takeaways from this method that I'd like to poi
 - `.reduce(...` | I decided to use `.reduce()` because of the way it allows us to keep track of a changing value, but I could have just as easily used `.map()`. In that case I wouldn't need the `output` array, but I would need to initialize a `count` variable to keep track of the remainder.
 - `arrayLength = 6` | As you may know, you can set a default value to a function argument. Although the problem doesn't ask for this argument, since it is used as a constant within the function, I thought it would be good to make this a parameter anyway.
 - `Array.from({ length: arrayLength }).` | This is a quick way to initialize an empty array with a set length. Combining this with `.map()` or `.reduce()` is a handy technique to keep in mind for future programming needs.
+- `remainder > 0 ? remainder : 0` | This is added to prevent negative numbers from being added once the remainder has reached zero.
 
 ## Solution 2: Addition method
 
