@@ -1,12 +1,18 @@
-# Weekend code challenge
+# Weekend Code Challenge
 
 ![weekend-code-challenge-centered](https://user-images.githubusercontent.com/6524512/102009004-f07c1b80-3d77-11eb-95ad-2a4b5ea3229f.png)
 
-A collection of coding problems and their solutions. Practical, real-world coding puzzles that will sharpen your skills, which are small enough that you can complete at your leisure over the weekend.
+Weekend Code Challenge is a collection of coding problems and their solutions.
+It's a compendium of real-world coding puzzles that will sharpen your problem-solving skills, that are are small enough for you to complete on a lazy Saturday afternoon or invigorating Sunday morning.
 
-## How to use weekend code challenge
+## How to use Weekend Code Challenge
 
 1. Click on a folder to view the coding challenge.
-2. Read the problem scope and take note of additional information like `Example data`, `Expected output` and `Notes`.
-3. Work on your solution.
-4. When ready, check the `SOLUTION.md` file, to compare answers.
+2. Read the problem statement and take note of any additional information like `Example data`, `Expected output` and `Tips`.
+3. Work on your solution. Let your imagination take control.
+4. Confirm your answer and consider possible edge cases.
+5. When ready, check the `SOLUTION.md`, and compare your answer to the proposed solutions.
+
+## Contributors
+
+Do you have a solution to a problem you'd like to see added? Create a pull request!
