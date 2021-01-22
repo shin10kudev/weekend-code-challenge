@@ -2,7 +2,7 @@
 
 This problem was introduced by my good friend [justjohnd](https://github.com/justjohnd), and it goes like this:
 
-Create a function that, given a non-negative integer, will return an array of arrays containing all the possible non-repeating combinations of integers from 1-n.
+Create a function that, given a non-negative integer `n`, will return an array of arrays containing all the possible non-repeating, 2 value combinations of integers from `1` to `n`.
 
 So, if we called the function `showMeTheCombinations(3)`, the expected output would be:
 
