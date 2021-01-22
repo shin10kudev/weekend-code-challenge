@@ -14,7 +14,7 @@ So, if we called the function `showMeTheCombinations(3)`, the expected output wo
 ];
 ```
 
-Notice that the output includes all the numbers from `1` to `n` -- `n` in this case being `3`. Note also that it all the possible combinations of numbers from `1-3` are also included without any duplicates.
+Notice that the output includes all the numbers from `1` to `n` -- `n` in this case being `3`. Note also that all the possible combinations of numbers from `1-3` are included without any duplicates.
 
 ## Further information
 
