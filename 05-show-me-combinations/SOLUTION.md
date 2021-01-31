@@ -2,7 +2,7 @@
 
 This problem presents a great opportunity to think not only about how to generate a brute force approach, but also about analyzing time complexity, and how it can leave you with some surprising results.
 
-I will go through the brute force method of solving this problem first, then try to get to a single pass solution.
+I will go through the brute force method of solving this problem first, then try to get to a linear solution.
 
 ## Helper methods
 
@@ -28,7 +28,7 @@ The problem asks us to return all of the non-repeating combinations of integers.
 4 -> 4,5
 ```
 
-As you can see, one way to get the answer is to start with the first item in the array, and then combine it with each subsequent element, before moving on to the next item in the array. We repeat this process until we get to `5` because at that point there are no other combinations to create without creating duplicates.
+As you can see, one way to get the answer is to start with the first item in the array, and then combine it with each subsequent element, before moving on to the next item in the array. We repeat this process until we get to `5` because at that point there are no other combinations to create.
 
 This reveals the brute force solution, which is to use a nested-for-loop. You use the first for loop to loop through each item in the array, and the second for loop to combine that number with each subsequent number, starting at `i + 1`, until reaching the end of the array.
 
@@ -103,7 +103,7 @@ So I had the idea that I could create a flattened array where I push all the com
 [2, 3, 4, 5, 3, 4, 5, 4, 5, 5];
 ```
 
-With a flattened array, we can avoid a nested for loop. But we still need two for loops, except that they run consecutively.
+With a flattened array, we can avoid a nested for loop. But we still need two for loops to get the whole job done.
 
 The first for loop will go through the integers and generate 2 lists -- one which contains all the combinations for each number, and a second to keep track of the count for each combination (since we lose this dimension with a simple array).
 
