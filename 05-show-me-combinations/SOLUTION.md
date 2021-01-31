@@ -176,10 +176,10 @@ I think there are a number of factors that explain why the first solution runs f
 
 ## Conclusion
 
-This was a very interesting problem and got me to study a ton of stuff I may have forgotten or only understood in passing. I wasn't able to come up with a better solution than these two, so I'm very curious to know if others have a different answer.
+This was a very interesting problem and got me to study many concepts in detail that I may have forgotten about or maybe only understood in passing. I wasn't able to come up with a better solution than these two, however, so I'm very curious to know if others have a different answer.
 
-I think these solutions clearly illustrate that time complexity does not translate equally to speed. But there is another point here as well.
+I think these solutions clearly illustrate that time complexity is not necessarily an indicator for faster program speed when evaluating fixed inputs that are relatively small. But there is another point here as well.
 
-Although using a nested for loop can often mean an O(n2) solution, and two for loops are often simplified to be O(n), this thinking is also not effective. That's because when assessing time complexity, the technique you use doesn't guarantee the time complexity -- rather the way the output grows in relation to the input is what we are concerned with.
+Although using a nested for loop can often mean an O(n^2) solution, and two for loops are often simplified to be O(n), like conflating speed and time complexity, this thinking is also not accurate. That's because the technique you use doesn't map 1-to-1 with a certain time complexity even if there is a seeming pattern between the two. Evaluating time complexity comes from looking at the relationship between how the runtime increases relative to the size of the input.
 
-Both of these points are really important to keep in mind when assessing your algorithm solution.
+Both of these points are really important to keep in mind when assessing your algorithm solutions, and which kinds of solutions you try to pursue.
