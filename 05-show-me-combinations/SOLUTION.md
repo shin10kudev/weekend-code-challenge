@@ -105,7 +105,7 @@ So I had the idea that I could create a flattened array where I push all the com
 
 With a flattened array, we can avoid a nested for loop. But we still need two for loops to get the whole job done.
 
-The first for loop will go through the integers and generate 2 lists -- one which contains all the combinations for each number, and a second to keep track of the count for each combination (since we lose this dimension with a simple array).
+The first for loop will go through the integers and generate 2 lists -- one which contains all the combinations for each number, and a second to keep track of the count for each number we need to combine these with (since unlike with a hash, we lose this dimension when using a flattened array).
 
 The second for loop goes through that array of combinations and generates our output. The code becomes a bit convoluted, but looks like this:
 
