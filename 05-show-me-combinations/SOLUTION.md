@@ -1,6 +1,6 @@
 # Solution
 
-This problem presents a good opportunity to think about the brute force approach and about analyzing time complexity.
+This problem presents a great opportunity to think not only about how to generate a brute force approach, but also about analyzing time complexity, and how it can leave you with some surprising results.
 
 I will go through the brute force method of solving this problem first, then try to get to a single pass solution.
 
@@ -89,7 +89,7 @@ It is then possible to format this as an object, where the keys are each item in
 }
 ```
 
-We could also use an array of arrays, keeping in mind that that to map the index to the number we need to think, `i = i + 1`. That is, index `0` actually refers to number `1`, and so on.
+We could also use an array of arrays, keeping in mind that to map the index to the number we need to think, `i = i + 1`. That is, index `0` actually refers to number `1`, and so on.
 
 ```js
 [[2, 3, 4, 5], [3, 4, 5], [4, 5], [5]];
@@ -105,7 +105,7 @@ So I had the idea that I could create a flattened array where I push all the com
 
 With a flattened array, we can avoid a nested for loop. But we still need two for loops, except that they run consecutively.
 
-The first for loop will go through the integers and generate 2 lists -- one which contains all the combinations for each number, and a second to keep track of the count for each combination (since we lose this dimmension with a simple array).
+The first for loop will go through the integers and generate 2 lists -- one which contains all the combinations for each number, and a second to keep track of the count for each combination (since we lose this dimension with a simple array).
 
 The second for loop goes through that array of combinations and generates our output. The code becomes a bit convoluted, but looks like this:
 
@@ -164,7 +164,7 @@ const averagePer = (func) => {
 };
 ```
 
-Running this several time for each of the functions, I got a pretty consistent reading. Whereas for my second solution averaged about `25 - 27` milliseconds, my first solution averaged around `15 - 17` milliseconds, which was quite surprising! Nested for loops are supposed to be slow!
+Running this several times for each of the functions, I got a pretty consistent reading. Whereas for my second solution averaged about `25 - 27` milliseconds, my first solution averaged around `15 - 17` milliseconds, which was quite surprising! Nested for loops are supposed to be slow!
 
 But before talking more about this, I should mention that both of these functions require very heavy operations, and if you enter a number like `10,000`, it will be very slow, and may even crash the browser tab. Why is that? It's because calculating the number of unique combinations for a given number involves factorials.
 
