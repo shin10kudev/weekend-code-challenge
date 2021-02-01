@@ -41,9 +41,9 @@ const findTheCombinations1 = (number) => {
 
 This will return the expected output of `[[1, 2], [1, 3], [1, 4]...]`. Note that if we wanted, we could check the length of the returned array, and it would give us the number of unique 2-digit combinations for the given number, which is pretty cool.
 
-When analyzing this solution, a question that quickly arises is if the nested for loop is quadratic -- an O(n^2) answer, as it were. Notably, as we iterate through the first loop, the number of iterations required by the second for loop decreases by `1` until we reach `0`. Although this seems significant, in the grand scheme of things this solution is O(n^2). See [this stackoverflow question](https://stackoverflow.com/questions/362059/what-is-the-big-o-of-a-nested-loop-where-number-of-iterations-in-the-inner-loop) for an interesting discussion about this.
+When analyzing this solution, a question that quickly arises is if the nested for loop is quadratic -- an O(n^2) answer, as it were. Notably, as we iterate through the first loop, the number of iterations required by the second for loop decreases by `1` until we reach `0`. Although this seems significant, in the grand scheme of things this solution is O(n^2). See [this stackoverflow question](https://stackoverflow.com/questions/362059/what-is-the-big-o-of-a-nested-loop-where-number-of-iterations-in-the-inner-loop) for an interesting discussion about that.
 
-So that makes me wonder, is there a way to solve this problem in a single pass?
+So it makes me wonder, is there a way to solve this problem in a single pass?
 
 ## Solution 2: The linear solution
 
@@ -85,7 +85,9 @@ With a flattened array, we can avoid a nested for loop. But we still need two fo
 
 The first for loop will go through the integers and generate 2 lists -- one which contains all the combinations for each number, and a second to keep track of the count for each number we need to combine these with (since unlike with a hash, we lose this dimension when using a flattened array).
 
-The second for loop goes through that array of combinations and generates our output. The code becomes a bit tricky, but looks like this:
+The second for loop goes through that array of combinations and generates our output.
+
+But it comes at a cost: time complexity is improved at the expense of space complexity, as you'll see:
 
 ```js
 const findTheCombinations2 = (number) => {
