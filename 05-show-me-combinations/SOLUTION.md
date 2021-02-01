@@ -91,27 +91,27 @@ But it comes at a cost: time complexity is improved at the expense of space comp
 
 ```js
 const findTheCombinations2 = (number) => {
+  const matchCounts = [];
   const combinations = [];
-  const countOfCombinations = [];
   const output = [];
   const numbers = Array.from({ length: number }, (_, i) => i + 1);
 
   for (let i = 1; i < numbers.length; i++) {
     let pairs = numbers.slice(i);
-    countOfCombinations.push(...pairs);
-    combinations.push(pairs.length);
+    combinations.push(...pairs);
+    matchCounts.push(pairs.length);
   }
 
-  let matchCount = combinations[0];
+  let matchCount = matchCounts[0];
   let match = 1;
 
-  for (let i = 0; i < countOfCombinations.length; i++) {
-    output.push([match, countOfCombinations[i]]);
+  for (let i = 0; i < combinations.length; i++) {
+    output.push([match, combinations[i]]);
     matchCount--;
 
     if (matchCount === 0) {
       match++;
-      matchCount = combinations[match - 1];
+      matchCount = matchCounts[match - 1];
     }
   }
 
