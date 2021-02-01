@@ -114,7 +114,7 @@ The first for loop will go through the `numbers` array and generate a list that 
 
 The second for loop goes through that array of combinations and generates our output. To know which numbers to match with each index, we can reuse our `numbers` array and start at `numbers[numbers.length - 2]`.
 
-This is a little tricky, but basically if we look at this array in reverse from the second to the last value, `[4, 3, 2, 1]`, we can use this as a reference for generating our pairs (kind of like the keys in a hash). We know for istance that `1` will be matched with `4` numbers, `2` with `3` numbers, `3` with `2`, numbers and so on.
+This is a little tricky, but basically if we look at this array in reverse from the second to the last value, `[4, 3, 2, 1]`, we can use this as a reference for generating our pairs (kind of like the keys in a hash). We know for istance that `1` will be matched with `4` numbers, `2` with `3` numbers, `3` with `2` numbers, and so on.
 
 Well, enough of the technical details -- which of the above solutions is better? The nested for loop or the combination of for loops? The answer is not necessarily as obvious as it may seem...
 
