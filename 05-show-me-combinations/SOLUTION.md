@@ -83,26 +83,17 @@ So I had the idea that I could create a flattened array where I push all the com
 
 With a flattened array, we can avoid a nested for loop. But we still need two for loops to get the whole job done.
 
-The first for loop will go through the integers and generate 2 lists -- one which contains all the combinations for each number, and a second to keep track of the count for each number we need to combine these with (since unlike with a hash, we lose this dimension when using a flattened array).
-
-The second for loop goes through that array of combinations and generates our output.
-
-But it comes at a cost: time complexity is improved at the expense of space complexity, as you'll see:
-
 ```js
 const findTheCombinations2 = (number) => {
-  const matchCounts = [];
-  const combinations = [];
   const output = [];
+  const combinations = [];
   const numbers = Array.from({ length: number }, (_, i) => i + 1);
 
   for (let i = 1; i < numbers.length; i++) {
-    let pairs = numbers.slice(i);
-    combinations.push(...pairs);
-    matchCounts.push(pairs.length);
+    combinations.push(...numbers.slice(i));
   }
 
-  let matchCount = matchCounts[0];
+  let matchCount = numbers[numbers.length - 2];
   let match = 1;
 
   for (let i = 0; i < combinations.length; i++) {
@@ -111,7 +102,7 @@ const findTheCombinations2 = (number) => {
 
     if (matchCount === 0) {
       match++;
-      matchCount = matchCounts[match - 1];
+      matchCount = numbers[match - 1];
     }
   }
 
@@ -119,7 +110,13 @@ const findTheCombinations2 = (number) => {
 };
 ```
 
-So which of the above solutions is better? The nested for loop or the combination of for loops? The answer is not necessarily as obvious as it may seem...
+The first for loop will go through the `numbers` array and generate a list that contains all the combinations for each number.
+
+The second for loop goes through that array of combinations and generates our output. To know which numbers to match with each index, we can reuse our `numbers` array and start at `numbers[numbers.length - 2]`.
+
+This is a little tricky, but basically if we look at this array in revers string from the second to the last value, `[4, 3, 2, 1]`, we can use this as a reference for generating our pairs.
+
+But enough of the technical details -- which of the above solutions is better? The nested for loop or the combination of for loops? The answer is not necessarily as obvious as it may seem...
 
 ## Assessing our solutions
 
