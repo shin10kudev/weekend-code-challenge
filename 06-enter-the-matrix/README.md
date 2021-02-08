@@ -3,7 +3,7 @@
 Given a matrix of zeros and ones like the following:
 
 ```js
-const bitsOfBits = [
+const matrix = [
   [1, 0, 0, 1, 0],
   [1, 0, 1, 0, 0],
   [1, 0, 1, 0, 1],
@@ -14,7 +14,7 @@ const bitsOfBits = [
 
 ...write a function that will return an array of any sequences that have a matching sequence in the matrix.
 
-For the above matrix, the correct answer would be `[[1, 0, 1, 0, 1]]`, since this sequence appears twice, once at `bitsOfBits[2]` and again at `bitsOfBits[3]`.
+For the above matrix, the correct answer would be `[[1, 0, 1, 0, 1]]`, since this sequence appears twice, once at `matrix[2]` and again at `matrix[3]`.
 
 ## Notes
 
