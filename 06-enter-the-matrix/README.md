@@ -19,5 +19,5 @@ For the above matrix, the correct answer would be `[[1, 0, 1, 0, 1]]`, since thi
 ## Notes
 
 - All of the sub arrays will have the same length.
-- It's possible there could be multiple matching sequences, and you should return an array with all the duplicated arrays.
+- It's possible there could be multiple repeated combinations, and you should return an array with all the duplicated combinations.
 - It's possible that the same sequence could appear more than twice, but in the output you should only include it once.
