@@ -82,7 +82,7 @@ I found a very interesting discussion about the time complexity of traversing a 
 
 ## Solution 2: Using Array.prototype.flatten()
 
-I wanted to think about this problem another way, so I thought about what I could do if I first flatten the matrix. Doing so, we lose the structure of the rows, but since the lenght of the sub arrays will be fixed, we can utilize some simple pointers to keep track of where we are.
+I wanted to think about this problem another way, so I thought about what I could do if I first flatten the matrix. Doing so, we lose the structure of the rows, but since the length of the sub arrays will be fixed, we can utilize some simple pointers to keep track of where we are.
 
 I still want to utilize the previous method of keeping track of visited combinations using the hash table.
 
