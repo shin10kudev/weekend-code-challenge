@@ -14,7 +14,7 @@ const seenValues = {
 };
 ```
 
-Applying this concept, we could loop through each item in the matrix, but how would we keep track of the combinations we encounter effectively?
+Applying this concept, we could loop through each item in the matrix. But how would we keep track of the combinations we encounter effectively? Good question.
 
 I opted to us `matrixRow.join('')`, which will produce a stringified version of the combination. So my hash table ended up looking like this:
 
@@ -82,11 +82,13 @@ I found a very interesting discussion about the time complexity of traversing a 
 
 ## Solution 2: Using Array.prototype.flatten()
 
-I wanted to think about this problem another way, so I thought about what I could do if I first flatten the matrix. Doing so, we lose the structure of the rows, but since the length of the sub arrays will be fixed, we can utilize some simple pointers to keep track of where we are.
+I wanted to think about this problem another way, so I thought about what I could do if I first flattened the matrix. Doing so, we lose the structure of the rows, but since the length of the sub-arrays will be fixed, we can utilize some simple pointers to keep track of where we are.
 
 I still want to utilize the previous method of keeping track of visited combinations using the hash table.
 
-The additional pointers can be difficult if you are not accustomed to this technique, but it is good practice. I find that giving good names for the pointers, also helps clarify the useage, so I decided to call my pointers, `colIndex` and `rowIndex`, since I am using them to keep track of where I would have been in the column and row of the matrix if it weren't flattened:
+The additional pointers can be difficult if you are not accustomed to this technique -- however, it is really good practice, and an essential technique for handling all sorts of algorithms.
+
+I find that giving good names for the pointers also helps clarify the useage, so I decided to call my pointers `colIndex` and `rowIndex`, since I am using them to keep track of where I would have been in the column and row of the matrix if it weren't flattened:
 
 ```js
 function findDupesInMatrix(matrix) {
