@@ -4,7 +4,7 @@ I'd like to introduce two solutions, both of which provide good practice for thi
 
 ## Solution 1: Using Array.prototype.join()
 
-One solution to this problem is similar to the solution if we were looking for duplicates in a flattened array. That is, we would maintain a hash table of previously seen values. Going through that array, we might generate a hash table that looks like this, where the key is the item we encountered, and the value is the count of times we encountered it:
+My first solution to this problem is similar to the approach we'd take if we were looking for duplicates in a flattened array. That is, we would maintain a hash table of previously seen values. Going through that array, we might generate a hash table that looks like this, where the key is the item we encountered, and the value is the count of times we encountered it:
 
 ```js
 const seenValues = {
