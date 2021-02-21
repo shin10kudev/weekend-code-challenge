@@ -1,6 +1,6 @@
 # Problem
 
-This problem is a fun one because there are so many different ways to solve it. Which means you can come up with multiple answers, practice multipe techniques and compare the relative strengths and weaknesses. That's a triple bonus for a weekend code challenge problem.
+This problem is a fun one because there are so many different ways to solve it. Which means you can come up with multiple answers, practice multiple techniques and compare the relative strengths and weaknesses. That's a triple bonus for a weekend code challenge problem.
 
 So, the question is this:
 
