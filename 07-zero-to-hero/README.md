@@ -22,3 +22,4 @@ The correct output would look like this:
 
 - There are no limitations on what you can do to the array. Feel free to mutate it in place if you like
 - The best answer will be done in linear time, with constant space complexity
+- Consider edge cases like if all the items were zeros (e.g. `[0, 0, 0, 0, 0, 0, 0]`) or if there are zeros at the beginning and end of your array (e.g. `[0, 0, 1, 33, -2, 0, 0]`)
