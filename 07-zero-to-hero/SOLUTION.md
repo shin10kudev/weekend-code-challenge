@@ -1,10 +1,10 @@
 # Solution
 
-Let's explore the various solutions and think about how we can go from our first-pass solution to something more optimized
+Let's explore several different solutions, and think about what techniques we use to optimize the space and time complexity.
 
 ## Solution 1: Use additional arrays
 
-I think one of the easiest solutions to this problem is to sort the zeros and non-zeros into separate arrays, and then merge the arrays at the end before returning.
+I think one of the easiest solutions to this problem is to sort the zeros and non-zeros into separate arrays and then merge the arrays at the end before returning.
 
 ```js
 function zeroToHero(numbers) {
@@ -24,13 +24,15 @@ function zeroToHero(numbers) {
 }
 ```
 
-This solution will be linear O(n) time, but the space is O(n), since we have to allocate memory for the `zeros` and `nonZeros` array, which combined will be equal to the size of `n`. This is a good first-pass solution, but we can do better in terms of space complexity.
+This solution will use linear O(n) time, but the space is O(2n), since we have to allocate memory for the `zeros` and `nonZeros` array, which combined will be equal to the size of `n`, and when we return the final output, we're actually creating a new array of length `n`.
+
+This is not bad for a first-pass solution, because we have something to work with, but we can do better in terms of space complexity.
 
 ## Solution 2: Swap with items at end of the array
 
-This is a popular solution to this question. By keeping a pointer referencing the value at the end of the array, when we encounter a zero, we can swap the values and then move the pointer 1 to the left.
+This 2nd solution is a popular approach to this problem. By keeping a pointer referencing the value at the end of the array, when we encounter a zero, we can swap the values and then move our end pointer to the left by 1.
 
-One thing to watch out for with this solution is the case where your end pointer is pointing at another zero. Like in the case of `[0, 1, 0]`. If you don't pay attention to this, then you'll end up swapping two zeros, and you are back to square, well--zero.
+However, one thing to watch out for with this solution is the case where your end pointer is pointing at another zero, like in the case of `[0, 1, 0]`. If you don't pay attention to this, then you'll end up swapping two zeros, and you'll be back to square, well -- square zero.
 
 Let's see how we can overcome this:
 
@@ -58,7 +60,7 @@ function zeroToHero(numbers) {
 }
 ```
 
-As you can see, at each iteration I'm checking if my end pointer is pointing at a zero, and, if so, I move the `endIdx` 1 value to the left, with this block here:
+As you can see, at each iteration I'm checking if my end pointer is pointing at a zero, and, if so, I move the `endIdx` to the left, with this block here:
 
 ```js
 while (numbers[endIdx] === 0 && endIdx > i) {
