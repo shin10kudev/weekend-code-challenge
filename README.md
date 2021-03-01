@@ -13,6 +13,14 @@ It's a compendium of real-world coding puzzles that will sharpen your problem-so
 4. Confirm your answer and consider possible edge cases.
 5. When ready, check the `SOLUTION.md`, and compare your answer to the proposed solutions.
 
+## Background information
+
+Where applicable, we'll lightly explore the time and space complexity of the solutions that are presented. This is to encourage you to think about this regarding your own solutions, and to get you in the habit of always doing so.
+
+For a quick primer on Big(O) notation please check out this general walkthough that I wrote, which will get you started thinking about this:
+
+- [Talking Big(O) like the pros | Medium](https://shinjukudev.medium.com/talking-big-o-like-the-pros-7436b39108d5)
+
 ## Contributors
 
 Do you have a solution to a problem you'd like to see added? Create a pull request!
