@@ -42,6 +42,8 @@ function firstNonRepeatingChar(str) {
 }
 ```
 
+This memoization technique does more for us than simply optimizting the solution, it actually improves the time complexity significantly so that we are not dealing with an exponential solution anymore.
+
 ## Solution 2: Use a hash and a loop through twice
 
 The first solution that comes to mind is the idea of keeping track of how many times youve encountered each of the values in the string in a hash table and then checking to see if there is a case where a character was only seen once.
