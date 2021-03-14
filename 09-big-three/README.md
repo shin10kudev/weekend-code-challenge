@@ -22,3 +22,4 @@ Expected output:
 
 - The array will not be sorted, and you cannot sort it to solve this problem -- that would be too easy ;)
 - There will always be at least 3 values in the input array, and they will always be integers.
+- There may be duplicates of the same integers. Potentially all 3 values could be the same number if those are the largest integers in the array.
