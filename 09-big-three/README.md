@@ -2,9 +2,9 @@
 
 This is a classic problem, and a variation on an even more classic problem, which is to find the largest value in an array.
 
-Difference here, is that you need to find the 3 largest values in an array. And they need to be returned in ascending order.
+Difference here is that you need to find the 3 largest values in the array. And they need to be returned in ascending order.
 
-So, given an array of integers, return an array of the 3 largest numbers from that array.
+So, to put it clearly, given an array of integers, write a function that will return an array of the 3 largest numbers from that array.
 
 Sample input:
 
