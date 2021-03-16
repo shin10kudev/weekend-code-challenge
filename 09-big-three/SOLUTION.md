@@ -84,4 +84,4 @@ With this, we have a linear solution and we only had to make one pass.
 
 Hopefully, by now you have gotten a lot more comfortable with utilizing a mix of for loops and while loops, and also making use of reference pointers of all kinds to keep track of where you are and what you need in order to make various logical decisions within your algorithms.
 
-These techniques are incredibly powerful and allow you to solve an ever greater number of problems, so even if you aren't quite comfortable with it yet, trust me that with more practice, it will become more and more natural for you to reach for these techniques.
+These techniques are incredibly powerful and allow you to solve an ever greater number of problems, so even if you aren't quite comfortable with it yet, trust me that with more practice it will become increasingly natural for you to reach for these techniques and relish the features they unlock.
