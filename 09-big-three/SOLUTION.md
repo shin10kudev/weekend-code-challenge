@@ -15,24 +15,24 @@ Some may have opted to write out 3 for loops, but I think it is a bit cleaner to
 ```js
 function findBigThree(array) {
   const largest = [];
-  let index = 0;
+  let idx = 0;
   let currMax = array[0];
   let currMaxIdx = 0;
 
   while(largest.length < 3) {
-    let val = array[index];
+    let val = array[idx];
 
     if(val > currMax) {
       currMax = val;
-      currMaxIdx = index;
+      currMaxIdx = idx;
     }
 
-    index++;
+    idx++;
 
-    if(index > array.length) {
+    if(idx > array.length) {
       largest.push(currMax);
       array.splice(currMaxIdx, 1);
-      index = 0;
+      idx = 0;
       currMaxIdx = 0;
       currMax = array[0];
     }
@@ -57,15 +57,15 @@ function findBigThree(array) {
   const largest = [];
 
   for (let i = 0; i < array.length; i++) {
-    let index = 0;
-    let val = array[i];
+    const val = array[i];
+    let currIdx = 0;
 
-    while (index < largest.length) {
-      if (val < largest[index]) break;
-      index++;
+    while (currIdx < largest.length) {
+      if (val < largest[currIdx]) break;
+      currIdx++;
     }
 
-    largest.splice(index, 0, val);
+    largest.splice(currIdx, 0, val);
 
     if (largest.length > 3) {
       largest.shift();
