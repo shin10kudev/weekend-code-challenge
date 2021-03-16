@@ -19,7 +19,7 @@ Where applicable, I'll lightly explore the time and space complexity of the solu
 
 For a quick primer on time complexity and "Big(O) notation" please check out this quick guide I wrote about it:
 
-- [Talking Big(O) like the pros | Medium](https://shinjukudev.medium.com/talking-big-o-like-the-pros-7436b39108d5)
+- [Talking Big(O) like the pros - Medium.com](https://shinjukudev.medium.com/talking-big-o-like-the-pros-7436b39108d5)
 
 ## Contributors
 
