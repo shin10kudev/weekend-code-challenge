@@ -14,31 +14,31 @@ Some may have opted to write out 3 for loops, but I think it is a bit cleaner to
 
 ```js
 function findBigThree(array) {
-	const largest = [];
-	let index = 0;
-	let currMax = array[0];
-	let currMaxIdx = 0;
+  const largest = [];
+  let index = 0;
+  let currMax = array[0];
+  let currMaxIdx = 0;
 
-	while(largest.length < 3) {
-		let val = array[index];
+  while(largest.length < 3) {
+    let val = array[index];
 
-		if(val > currMax) {
-			currMax = val;
-			currMaxIdx = index;
-		}
+    if(val > currMax) {
+      currMax = val;
+      currMaxIdx = index;
+    }
 
-		index++;
+    index++;
 
-		if(index > array.length) {
-			largest.push(currMax);
-			array.splice(currMaxIdx, 1);
-			index = 0;
-			currMaxIdx = 0;
-			currMax = array[0];
-		}
-	}
+    if(index > array.length) {
+      largest.push(currMax);
+      array.splice(currMaxIdx, 1);
+      index = 0;
+      currMaxIdx = 0;
+      currMax = array[0];
+    }
+  }
 
-	return largest.sort((a, b) => a - b);
+  return largest.sort((a, b) => a - b);
 }
 ```
 
@@ -54,25 +54,25 @@ Essentially what we'll do is sort the array as we go along and any time the arra
 
 ```js
 function findBigThree(array) {
-	const largest = [];
+  const largest = [];
 
-	for (let i = 0; i < array.length; i++) {
-		let index = 0;
-		let val = array[i];
+  for (let i = 0; i < array.length; i++) {
+    let index = 0;
+    let val = array[i];
 
-		while (index < largest.length) {
-			if (val < largest[index]) break;
-			index++;
-		}
+    while (index < largest.length) {
+      if (val < largest[index]) break;
+      index++;
+    }
 
-		largest.splice(index, 0, val);
+    largest.splice(index, 0, val);
 
-		if (largest.length > 3) {
-			largest.shift();
-		}
-	}
+    if (largest.length > 3) {
+      largest.shift();
+    }
+  }
 
-	return largest;
+  return largest;
 }
 ```
 
