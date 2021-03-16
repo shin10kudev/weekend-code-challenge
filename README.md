@@ -3,7 +3,7 @@
 ![weekend-code-challenge-centered](https://user-images.githubusercontent.com/6524512/102009004-f07c1b80-3d77-11eb-95ad-2a4b5ea3229f.png)
 
 Weekend Code Challenge is a collection of coding problems and their solutions.
-It's a compendium of real-world challenges and coding puzzles that will sharpen your problem-solving skills that are small enough that you can complete in your spare time over the weekend.
+It's a compendium of real-world challenges and coding puzzles that can sharpen your problem-solving skills, which are small enough that you can complete them in your spare time over the weekend.
 
 ## How to use Weekend Code Challenge
 
