@@ -15,12 +15,12 @@ It's a compendium of real-world challenges and coding puzzles that can sharpen y
 
 ## Background information
 
-Where applicable, we'll lightly explore the time and space complexity of the solutions that are presented. This is to encourage you to think about this regarding your own solutions, and to get you in the habit of always doing so.
+Where applicable, I'll lightly explore the time and space complexity of the solutions that are presented. This step is meant to encourage you to think about this regarding your own code, and to get you in the habit of always doing so.
 
-For a quick primer on Big(O) notation please check out this general walkthough that I wrote, which will get you started thinking about this:
+For a quick primer on time complexity and "Big(O) notation" please check out this quick guide I wrote about it:
 
 - [Talking Big(O) like the pros | Medium](https://shinjukudev.medium.com/talking-big-o-like-the-pros-7436b39108d5)
 
 ## Contributors
 
-Do you have a solution to a problem you'd like to see added? Create a pull request!
+Do you have a solution to a problem you'd like to see added? Fork the repo and create a pull request!
