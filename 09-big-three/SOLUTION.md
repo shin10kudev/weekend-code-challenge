@@ -6,9 +6,7 @@ Let's take a look at a brute force solution and a more optimal one.
 
 One way we could certainly go about solving this problem is to go through the array 3 times. During each pass, we would need to find the current largest number, and we'd also need to handle the case where there are duplicates of the largest numbers.
 
-Rather than keeping track of the count of duplicate large numbers, which could get really confusing, we could keep track of the index of where we found the largest number then simply remove it from the array so as not to encounter it again on the second pass.
-
-Finally, we'd need to do a quick sort of the array of largest numbers before we return it.
+Rather than keeping track of the count of duplicate large numbers, which could get really confusing, we could keep track of the index of where we found the largest number and either remove it from the array or skip that index.
 
 Some may have opted to write out 3 for loops, but I think it is a bit cleaner to use a while loop, like this:
 
@@ -30,7 +28,7 @@ function findBigThree(array) {
     idx++;
 
     if(idx > array.length) {
-      largest.push(currMax);
+      largest.unshift(currMax);
       array.splice(currMaxIdx, 1);
       idx = 0;
       currMaxIdx = 0;
@@ -38,7 +36,7 @@ function findBigThree(array) {
     }
   }
 
-  return largest.sort((a, b) => a - b);
+  return largest;
 }
 ```
 
