@@ -48,7 +48,7 @@ For our purposes, the order is not important, so we'll ignore, but please keep t
 
 ## Solution 3: Using for... in + Object.entries()
 
-Sticking with `Object.entries` for a second, let's combine it with another method and see what we can do. The `for... in` statement allows us to loop through all the keys in an object. We can combine this with `Object.entries()` and use destructuring in a similar way to get our intended result.
+Sticking with `Object.entries()` for a second, let's combine it with another method and see what we can do. The `for... in` statement allows us to loop through all the keys in an object. We can combine this with `Object.entries()` and use destructuring in a similar way to get our intended result.
 
 ```js
 const convertObjToArrayOfObjects = (data) => {

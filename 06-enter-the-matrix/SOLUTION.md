@@ -126,4 +126,4 @@ function findDupesInMatrix(matrix) {
 }
 ```
 
-I was curious about the run time of `Array.prototype.flatten()`, and from what I could find it runs in `O(n)` time. With the for loop I use to iterate through the flattened array, I would have `O(2n)` or `O(n)` run time for short.
+I was curious about the run time of `.flatten()`, and from what I could find it runs in `O(n)` time. With the for loop I use to iterate through the flattened array, I would have `O(2n)` or `O(n)` run time for short.
