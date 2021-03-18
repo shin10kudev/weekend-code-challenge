@@ -33,7 +33,7 @@ function getLargestNumber(numbers, skipIdxs) {
 For the main part of the function, we just need to call this helper 3 times. During each iteration, we'll keep track of the index we need to skip the next time around, as well as the largest value we found.
 
 ```js
-function threeLargestNums(numbers) {
+function findBigThree(numbers) {
   const largest = [];
   const skipIdxs = [];
   let count = 0;
