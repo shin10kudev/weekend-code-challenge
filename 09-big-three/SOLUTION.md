@@ -69,7 +69,6 @@ function findBigThree(array) {
       if (val < largest[currIdx]) break;
       currIdx++;
     }
-
     largest.splice(currIdx, 0, val);
 
     if (largest.length > 3) {
