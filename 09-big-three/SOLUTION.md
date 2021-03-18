@@ -8,41 +8,48 @@ One way we could certainly go about solving this problem is to go through the ar
 
 Rather than keeping track of the count of duplicate large numbers, which could get really confusing, we could keep track of the index of where we found the largest number and either remove it from the array or skip that index.
 
-Some may have opted to write out 3 for loops, but I think it is a bit cleaner to use a while loop, like this:
+First, let's create a helper method that we can use to find the largest number in an array, and since we want to be able to skip over numbers we've seen before, we'll also pass an array of indexes that we want to skip.
 
 ```js
-function findBigThree(array) {
+function getLargestNumber(numbers, skipIdxs) {
+  let max = numbers[0];
+  let maxIdx = 0;
+
+  for(let i = 1; i < numbers.length; i++) {
+    if (skipIdxs.includes(i)) continue;
+
+    const val = numbers[i];
+
+    if (val > max) {
+      max = val;
+      maxIdx = i;
+    }
+  }
+
+  return [max, maxIdx];
+}
+```
+
+For the main part of the function, we just need to call this helper 3 times. During each iteration, we'll keep track of the index we need to skip the next time around, as well as the largest value we found.
+
+```js
+function threeLargestNums(numbers) {
   const largest = [];
-  let idx = 0;
-  let currMax = array[0];
-  let currMaxIdx = 0;
+  const skipIdxs = [];
+  let count = 0;
 
-  while(largest.length < 3) {
-    let val = array[idx];
-
-    if(val > currMax) {
-      currMax = val;
-      currMaxIdx = idx;
-    }
-
-    idx++;
-
-    if(idx > array.length) {
-      largest.unshift(currMax);
-      array.splice(currMaxIdx, 1);
-      idx = 0;
-      currMaxIdx = 0;
-      currMax = array[0];
-    }
+  while (count < 3) {
+    const [maxVal, maxValIdx] = getLargestNumber(numbers, skipIdxs);
+    skipIdxs.push(maxValIdx);
+    largest.unshift(maxVal);
+    count++;
   }
 
   return largest;
 }
 ```
 
-There are quite a few variables we need to keep track of, but it does get the job done. The time complexity of this solution would be `O(3n)` or `O(n)`, since we need to loop through the array 3 times to get the answer. The final sort will only be of 3 numbers, and it is not significant in terms of its impact on time complexity.
-
-While this solution is linear, it is possible to do this in one pass. Let's take a look at how that would be done.
+Since we loop through all the numbers 3 times, the time complexity of this solution is `O(3n)` or `O(n)`. While this solution is technically linear, it is quite inefficient considering we have to loop through the array 3 times. It is possible to do this task in one pass, so let's take a look at how that can be done.
 
 ## Solution 2: The single pass
 
