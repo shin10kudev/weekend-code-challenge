@@ -103,6 +103,8 @@ Basically, when we encounter a zero, we cut it out of the array, and then push i
 
 Like the previous solution, I think it is good to move the end pointer to the left by one in the case where we add a zero to the end of the array, so we don't end up iterating over values we know to be zeros already.
 
+Note that using `.splice()` will mutate the original array. But this is unavoidable if we are asked to do an in-place sort of the original array.
+
 ## Conclusion
 
 This is an excellent problem to level up your skills because it strikes a great balance between having an interesting twist, being relatively easy to solve, and also a wide variety of possible answers.
