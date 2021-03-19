@@ -84,6 +84,36 @@ We could optimize the placement logic by utilizing a binary search sort of techn
 
 With this, we have a linear solution and we only had to make one pass.
 
+
+## Solution 3: The triple variable
+
+This solution sets variables for the three highest values, and updates them
+as a new high value is encountered while looping through the values. This reduces actual runtime by eliminating the 'while' loop for each value in the array.
+
+```js
+const getBigThree = (numsArr) => {
+  let highest = 0,
+    nextHighest = 0,
+    thirdHighest = 0;
+
+  numsArr.forEach(num => {
+    if(num >= highest) {
+      thirdHighest = nextHighest;
+      nextHighest = highest;
+      highest = num;
+    } else if(num >= nextHighest) {
+      thirdHighest = nextHighest;
+      nextHighest = num;
+    } else if(num > thirdHighest) {
+      thirdHighest = num;
+    }
+  })
+  return [thirdHighest, nextHighest, highest];
+}
+```
+
+One consideration, though, would be how to implement this with a non-static number of returned high values. (e.g. getBigThree(array, numberOfValues))
+
 ## Conclusion
 
 Hopefully, by now you have gotten a lot more comfortable with utilizing a mix of for loops and while loops, and also making use of reference pointers of all kinds to keep track of where you are and what you need in order to make various logical decisions within your algorithms.
