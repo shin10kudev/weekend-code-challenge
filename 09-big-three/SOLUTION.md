@@ -91,24 +91,23 @@ This solution sets variables for the three highest values, and updates them
 as a new high value is encountered while looping through the values. This reduces actual runtime by eliminating the 'while' loop for each value in the array.
 
 ```js
-const getBigThree = (numsArr) => {
-  let highest = 0,
-    nextHighest = 0,
-    thirdHighest = 0;
-
-  numsArr.forEach(num => {
-    if(num >= highest) {
-      thirdHighest = nextHighest;
-      nextHighest = highest;
-      highest = num;
-    } else if(num >= nextHighest) {
-      thirdHighest = nextHighest;
-      nextHighest = num;
-    } else if(num > thirdHighest) {
-      thirdHighest = num;
+function getBigThree(array) {
+  const largest = [null, null, null];
+  
+  for (const num of array) {
+    if(num > largest[2] || !largest[2]) {
+      largest[0] = largest[1];
+      largest[1] = largest[2];
+      largest[2] = num;
+    } else if(num > largest[1] || !largest[1]) {
+      largest[0] = largest[1];
+      largest[1] = num;
+    } else if(num > largest[0] || !largest[0]) {
+      largest[0] = num;
     }
-  })
-  return [thirdHighest, nextHighest, highest];
+  }
+  
+  return largest;
 }
 ```
 
