@@ -85,10 +85,9 @@ We could optimize the placement logic by utilizing a binary search sort of techn
 With this, we have a linear solution and we only had to make one pass.
 
 
-## Solution 3: The triple variable
+## Solution 3: The triple variable - [mwhitman189](https://github.com/mwhitman189)
 
-This solution sets variables for the three highest values, and updates them
-as a new high value is encountered while looping through the values. This reduces actual runtime by eliminating the 'while' loop for each value in the array.
+This solution sets an array (shoutout to [shin10kudev](https://github.com/shin10kudev) for suggesting the array over three separate variables) with three null values for the three highest values, and updates them as a new high value is encountered while looping through the values. This reduces actual runtime by eliminating the 'while' loop for each value in the array.
 
 ```js
 function getBigThree(array) {
