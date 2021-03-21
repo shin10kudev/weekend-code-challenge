@@ -7,7 +7,7 @@
 Weekend Code Challenge is a collection of coding problems and their solutions.
 It's a compendium of real-world challenges and coding puzzles that can sharpen your coding skills. Each problem is small in scope so you can work on it over the weekend and still have time for other things you need to get done.
 
-## How to use Weekend Code Challenge
+## 💡 How to use Weekend Code Challenge
 
 1. Click on a folder to view the coding challenge.
 2. Read the problem statement and take note of any additional information like `Example data`, `Expected output` and `Tips`.
@@ -15,7 +15,7 @@ It's a compendium of real-world challenges and coding puzzles that can sharpen y
 4. Confirm your answer and consider possible edge cases.
 5. When ready, check the `SOLUTION.md`, and compare your answer to the proposed solutions.
 
-## Background information
+## 👩‍💻 Background information
 
 Some of these problems will be the kinds of coding challenges you might encounter while working on a project as a developer. Others will take the shape of a typical "algorithm" problem.
 
@@ -27,6 +27,6 @@ For a quick primer on time complexity and "Big(O) notation" please check out thi
 
 - [Talking Big(O) like the pros - Medium.com](https://shinjukudev.medium.com/talking-big-o-like-the-pros-7436b39108d5)
 
-## Contributors
+## 🙌 Contributing
 
 If you'd like to contribute to this project, please see the [Contribution Guide](https://github.com/shin10kudev/weekend-code-challenge/blob/master/CONTRIBUTING.md)
