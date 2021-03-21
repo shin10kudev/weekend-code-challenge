@@ -1,6 +1,6 @@
 # Solution
 
-## Other solutions [mwhitman189](https://github.com/mwhitman189)
+## Other solutions - [mwhitman189](https://github.com/mwhitman189)
 This seems like a problem screaming for '.reduce', so here it is:
 
 ```js
