@@ -4,7 +4,7 @@
 
 - [ ] Adding a new solution
 - [ ] Fixing typos or grammar
-- [ ] Fixing issues with exisiting solution
+- [ ] Fixing issues with existing solution
 - [ ] Other
 
 ## Overview
