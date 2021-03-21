@@ -15,7 +15,7 @@ Insert your solution at the end of the `SOLUTION.md` file in a section titled `#
 
 ## Fixing issues or typos
 
-All programmers are great bug catchers -- and copy editors, too! If you notice something you'd like to fix, please fork the rop and submit a PR using the provided [PR Template](https://github.com/shin10kudev/weekend-code-challenge/blob/master/.github/PULL_REQUEST_TEMPLATE.md).
+All programmers are great bug catchers -- and copy editors, too! If you notice something you'd like to fix, please fork the repo and submit a PR using the provided [PR Template](https://github.com/shin10kudev/weekend-code-challenge/blob/master/.github/PULL_REQUEST_TEMPLATE.md).
 
 As an alternative, you can submit an issue using the [Issue Template](https://github.com/shin10kudev/weekend-code-challenge/blob/master/.github/ISSUE_TEMPLATE.md).
 
