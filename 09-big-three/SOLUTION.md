@@ -87,12 +87,14 @@ With this, we have a linear solution and we only had to make one pass.
 
 ## Solution 3: The triple variable - [mwhitman189](https://github.com/mwhitman189)
 
-This solution sets an array (shoutout to [shin10kudev](https://github.com/shin10kudev) for suggesting the array over three separate variables) with three null values for the three highest values, and updates them as a new high value is encountered while looping through the values. This reduces actual runtime by eliminating the 'while' loop for each value in the array.
+This solution initializes an array (shoutout to [shin10kudev](https://github.com/shin10kudev) for suggesting the array over using three separate variables) with three `null` values representing the three highest values, and updates them whenever we encounter a new highest value or they remain `null`.
+
+This reduces actual runtime by eliminating the need for an inner while loop as we iterate through the nubmers in the array.
 
 ```js
 function getBigThree(array) {
   const largest = [null, null, null];
-  
+
   for (const num of array) {
     if(num > largest[2] || !largest[2]) {
       largest[0] = largest[1];
@@ -105,12 +107,14 @@ function getBigThree(array) {
       largest[0] = num;
     }
   }
-  
+
   return largest;
 }
 ```
 
-One consideration, though, would be how to implement this with a non-static number of returned high values. (e.g. getBigThree(array, numberOfValues))
+One consideration, though, would be how we could adapt this if asked to make the number of returned highest values dynamic (e.g. `getBigKthNumbers(array, k)`, where `k` could be any value from 0 to `n`).
+
+This is not necessarily an issue, given the stated problem, however it is useful to think about how we would be able to adapt our solutions if the problem gets changed.
 
 ## Conclusion
 
