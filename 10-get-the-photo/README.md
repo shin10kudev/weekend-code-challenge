@@ -6,7 +6,7 @@ This is going to be a slightly easier problem than the past few as well, so it i
 
 So, the problem is this:
 
-Given an array of objects containing a keys to an image url with various sizes, `tiny`, and `large`, write a function that will efficiently return an array of strings containing only the urls to the `large` image?
+Given an array of objects containing urls to an image of various sizes, write a function that will efficiently return an array of strings containing only the urls to the `large` image.
 
 ## Example input
 
@@ -46,7 +46,7 @@ Given an array of objects containing a keys to an image url with various sizes, 
 
 - The input array could be really long or really short
 - The input array will always be an array and it will always have at least one object
-- The object will always contain the key `large` and `tiny`, and you can ignore other keys if they are included
+- The object will always contain the key `large`, and you can ignore other keys if they are present
 
 ## Tips
 
