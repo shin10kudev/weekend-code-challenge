@@ -1,8 +1,11 @@
 ## What kind of PR is this?
 
+**Check all that apply**
+
+- [ ] Adding a new solution
 - [ ] Fixing typos or grammar
-- [ ] Fixing issue with exisiting solution
-- [ ] Proposing a new solution
+- [ ] Fixing issues with existing solution
+- [ ] Other
 
 ## Overview
 
