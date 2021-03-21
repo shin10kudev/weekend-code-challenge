@@ -118,3 +118,36 @@ One consideration, though, would be how to implement this with a non-static numb
 Hopefully, by now you have gotten a lot more comfortable with utilizing a mix of for loops and while loops, and also making use of reference pointers of all kinds to keep track of where you are and what you need in order to make various logical decisions within your algorithms.
 
 These techniques are incredibly powerful and allow you to solve an ever greater number of problems, so even if you aren't quite comfortable with it yet, trust me that with more practice it will become increasingly natural for you to reach for these techniques and relish the features they unlock.
+
+## Other solutions
+
+## The triple variable - [mwhitman189](https://github.com/mwhitman189)
+
+This solution initializes an array (shoutout to [shin10kudev](https://github.com/shin10kudev) for suggesting the array over using three separate variables) with three `null` values representing the three highest values, and updates them whenever we encounter a new highest value or they remain `null`.
+
+This reduces actual runtime by eliminating the need for an inner while loop as we iterate through the nubmers in the array.
+
+```js
+function getBigThree(array) {
+  const largest = [null, null, null];
+
+  for (const num of array) {
+    if(num > largest[2] || !largest[2]) {
+      largest[0] = largest[1];
+      largest[1] = largest[2];
+      largest[2] = num;
+    } else if(num > largest[1] || !largest[1]) {
+      largest[0] = largest[1];
+      largest[1] = num;
+    } else if(num > largest[0] || !largest[0]) {
+      largest[0] = num;
+    }
+  }
+
+  return largest;
+}
+```
+
+One consideration, though, would be how we could adapt this if asked to make the number of returned highest values dynamic (e.g. `getBigKthNumbers(array, k)`, where `k` could be any value from 0 to `n`).
+
+This is not necessarily an issue, given the stated problem, however it is useful to think about how we would be able to adapt our solutions if the problem gets changed.
