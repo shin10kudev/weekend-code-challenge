@@ -23,6 +23,6 @@ As an alternative, you can submit an issue using an [Issue Template](https://git
 
 Weekend Code Challenge is a curated list of problems and solutions with the goal of teaching useful techniques and problem solving skills to the larger programming community.
 
-Although I'll try my best to use what you submit as is, I reserve the right to modify the text for spelling and grammatical fixes, which may include such things as changing the description, title and/or code in any way to better highlight key points or make the syntax and voice consistent with the other solutions presented in Weekend Code Challenge, and to change or remove submissions at any time without notice.
+Although I'll try my best to use what you submit as is, I reserve the right to modify the text for spelling and grammatical fixes, which may include such things as changing the description, title and/or code in any way to better highlight key points or make the syntax and voice consistent with the other solutions presented on Weekend Code Challenge, and to change or remove submissions at any time without notice.
 
 Please see the [License](https://github.com/shin10kudev/weekend-code-challenge/blob/master/.github/LICENSE.md) for Weekend Code Challenge for more information.
