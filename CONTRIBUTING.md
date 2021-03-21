@@ -23,4 +23,4 @@ As an alternative, you can submit an issue using the [Issue Template](https://gi
 
 Weekend Code Challenge is a curated list of problems and solutions with the goal of teaching useful techniques and problem solving skills to the larger programming community.
 
-I reserve the right to modify your submitted solutions for spelling and grammatical fixes, and to change the provided descriptions and solutions in any way to better highlight key points, make the syntax and voice consistent with other solutions, or to change and or remove submitted solutions at any time without notice.
+Although I'll try my best to use what you submit as is, I reserve the right to change or remove submitted solutions at any time without notice, and to modify your summissions for spelling and grammatical fixes, which may include changing the description, title and/or code in any way to better highlight key points or make the syntax and voice consistent with the other solutions presented in Weekend Code Challenge.
