@@ -21,6 +21,6 @@ As an alternative, you can submit an issue using the [Issue Template](https://gi
 
 ## Note on submissions
 
-Weekend code challenge is a curated list of problems and solutions with the goal of teaching useful techniques and problem solving skills to the larger programming community.
+Weekend Code Challenge is a curated list of problems and solutions with the goal of teaching useful techniques and problem solving skills to the larger programming community.
 
 I reserve the right to modify your submitted solutions for spelling and grammatical fixes, and to change the provided descriptions and solutions in any way to better highlight key points, make the syntax and voice consistent with other solutions, or to change and or remove submitted solutions at any time without notice.
