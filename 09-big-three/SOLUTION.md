@@ -84,8 +84,15 @@ We could optimize the placement logic by utilizing a binary search sort of techn
 
 With this, we have a linear solution and we only had to make one pass.
 
+## Conclusion
 
-## Solution 3: The triple variable - [mwhitman189](https://github.com/mwhitman189)
+Hopefully, by now you have gotten a lot more comfortable with utilizing a mix of for loops and while loops, and also making use of reference pointers of all kinds to keep track of where you are and what you need in order to make various logical decisions within your algorithms.
+
+These techniques are incredibly powerful and allow you to solve an ever greater number of problems, so even if you aren't quite comfortable with it yet, trust me that with more practice it will become increasingly natural for you to reach for these techniques and relish the features they unlock.
+
+## Other solutions
+
+## The triple variable - [mwhitman189](https://github.com/mwhitman189)
 
 This solution initializes an array (shoutout to [shin10kudev](https://github.com/shin10kudev) for suggesting the array over using three separate variables) with three `null` values representing the three highest values, and updates them whenever we encounter a new highest value or they remain `null`.
 
@@ -115,9 +122,3 @@ function getBigThree(array) {
 One consideration, though, would be how we could adapt this if asked to make the number of returned highest values dynamic (e.g. `getBigKthNumbers(array, k)`, where `k` could be any value from 0 to `n`).
 
 This is not necessarily an issue, given the stated problem, however it is useful to think about how we would be able to adapt our solutions if the problem gets changed.
-
-## Conclusion
-
-Hopefully, by now you have gotten a lot more comfortable with utilizing a mix of for loops and while loops, and also making use of reference pointers of all kinds to keep track of where you are and what you need in order to make various logical decisions within your algorithms.
-
-These techniques are incredibly powerful and allow you to solve an ever greater number of problems, so even if you aren't quite comfortable with it yet, trust me that with more practice it will become increasingly natural for you to reach for these techniques and relish the features they unlock.
