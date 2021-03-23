@@ -50,6 +50,6 @@ Given an array of objects containing urls to an image of various sizes, write a 
 
 ## Tips
 
-As I will often say on Weekend Code Challenge, it is really important to think of mutliple solutions to each problem so as to avoid using the same techniques, which can become stale over time.
+As I will often say on Weekend Code Challenge, it is really important to think of multiple solutions to each problem so as to avoid using the same techniques, which can become stale over time.
 
-Apply a variety of methods and built-in functions and try to find a solution that is not only effecient, but also easy to read and understand.
+Apply a variety of methods and built-in functions and try to find a solution that is not only efficient, but also easy to read and understand.
