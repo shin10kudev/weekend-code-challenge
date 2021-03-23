@@ -10,8 +10,8 @@ The JS 'reduce' method suits this problem well:
 ```js
 function getLargePhotos1(photos) {
   return photos.reduce((acc, curr) => {
-    acc.push(curr['large']);
-    return acc;
+    const { large } = curr;
+    return [...acc, large ];
   }, []);
 }
 ```
