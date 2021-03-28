@@ -6,7 +6,7 @@
 
 Check out other solutions to this problem
 
-### Using reduce - Submitted by (mwhitman189)[https://github.com/mwhitman189]
+### Using reduce - Submitted by [mwhitman189](https://github.com/mwhitman189)
 
 The `.reduce()` method is a perfect candidate for solving this problem:
 
