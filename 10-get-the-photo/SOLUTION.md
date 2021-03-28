@@ -6,7 +6,7 @@ The reason I do this is to show how the techniques we employ to solve algorithm 
 
 ## Solution 1: Loops and while loops
 
-Let's exercise our JavaScript syntactic skills and do this problem using a standard `for loop`, a while loop, and finally a `for...of` loop, which was introduced in [ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of).
+Let's exercise our JavaScript syntactic skills and do this problem using a standard `for loop`, a `while loop`, and finally a `for...of` loop, which was introduced in [ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of).
 
 ### The for loop
 
@@ -57,7 +57,7 @@ function getLargePhotos(photos) {
 
 Each of these solutions run in linear time. Nothing special here -- but it's great to practice writing these out to flex your JavaScript muscles beyond built-in array methods.
 
-I think that of the 3, the `for...of` loop is the easiest to parse visually, and perhaps the easiest to write out. The while loop is also nice, although we have to keep updating the `idx` just like we do in the `for loop`.
+I think that of the 3, the `for...of` loop is the easiest to parse visually, and perhaps the easiest to write out. The `while loop` is also nice, although we have to keep updating the `idx` just like we do in the `for loop`.
 
 While it's good to always know how to whip up a `for loop`, if you don't need to do anything special with indexes, the `for...of` loop is great for keeping the messy wires of the classic `for loop` tucked underneath the desk, so to speak.
 
