@@ -1,4 +1,4 @@
-## Title - [your-github-username](https://github.com/your-github-username)
+### Title - Submitted by [your-github-username](https://github.com/your-github-username)
 
 Briefly describe your logic and present your code...
 

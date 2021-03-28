@@ -95,7 +95,9 @@ These techniques are incredibly powerful and allow you to solve an ever greater 
 
 ## Other solutions
 
-## The triple variable - [mwhitman189](https://github.com/mwhitman189)
+Check out other solutions to this problem
+
+### The triple variable - Submitted by [mwhitman189](https://github.com/mwhitman189)
 
 This solution sets variables for the three highest values, and updates them
 as a new high value is encountered. This optimizes the solution by eliminating the need for an inner while loop as we iterate through the numbers in the array.
