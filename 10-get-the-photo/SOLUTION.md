@@ -6,7 +6,7 @@ The reason I do this is to show how the techniques we employ to solve algorithm 
 
 ## Solution 1: Loops and while loops
 
-Let's exercise our JavaScript syntactic skills and do this problem using a standard for loop, a while loop, and finally a `for...of` loop, which was introduced in [ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of).
+Let's exercise our JavaScript syntactic skills and do this problem using a standard `for loop`, a while loop, and finally a `for...of` loop, which was introduced in [ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of).
 
 ### The for loop
 
@@ -75,7 +75,7 @@ Of course, this means that we don't have to initialize an empty array or use `.p
 
 ## Conclusion
 
-When you encounter problems like these, using the full spectrum of JavaScript looping methods reveals a lot about what makes each method great. And we can fully understand the appeal of a function like `.map()` when compared to its for loop predecessor.
+When you encounter problems like these, using the full spectrum of JavaScript looping methods reveals a lot about what makes each method great. And we can fully understand the appeal of a function like `.map()` when compared to its `for loop` predecessor.
 
 Perhaps in a future challenge we can try to write a polyfill for the map function to get a greater understanding of how it works under the hood.
 
