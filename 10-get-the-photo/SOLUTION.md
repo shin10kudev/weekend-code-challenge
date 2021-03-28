@@ -77,7 +77,7 @@ Of course, this means that we don't have to initialize an empty array or use `.p
 
 When you encounter problems like these, using the full spectrum of JavaScript looping methods reveals a lot about what makes each method great. And we can fully understand the appeal of a function like `.map()` when compared to its `for loop` predecessor.
 
-Perhaps in a future challenge we can try to write a polyfill for the map function to get a greater understanding of how it works under the hood.
+Perhaps in a future challenge we can try to write a polyfill for the `.map()` function to get a greater understanding of how it works under the hood.
 
 ## Other solutions
 
@@ -96,7 +96,7 @@ function getLargePhotos(photos) {
 }
 ```
 
-And we can clean this up by utilizing es6 [object destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) and the [spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax), like so:
+And we can clean this up by utilizing [ES6 object destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) and the [ES6 spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax), like so:
 
 ```js
 function getLargePhotos(photos) {
