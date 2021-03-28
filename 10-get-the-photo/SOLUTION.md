@@ -107,7 +107,7 @@ function getLargePhotos(photos) {
 }
 ```
 
-Finally, we can take this even further to create a one line solution by using the [implicit return feature of es6 arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions). Thanks to [shin10kudev](https://github.com/shin10kudev) for pointing this out:
+Finally, we can take this even further to create a one line solution by using the [implicit return feature of ES6 arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions). Thanks to [shin10kudev](https://github.com/shin10kudev) for pointing this out:
 
 ```js
 const getLargePhotos = (photos) =>
