@@ -55,3 +55,16 @@ const output = Object.keys(ingredients).reduce(
   [],
 );
 ```
+
+## Solution 4: Use Object.entries
+
+`Object.entries` returns an array of pairs, where first element of the pair is the object's key and the second element is the value. Having this array, you just need to map to create an array of object with the attributes `name` and `count`.
+
+```js
+const ingredients = { lettuce: 0, bacon: 0, cheese: 1, meat: 4 };
+
+const output = Object.entries(ingredients).map(([name, count]) => ({
+  name,
+  count,
+}));
+```
