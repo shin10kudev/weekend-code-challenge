@@ -105,6 +105,22 @@ Like the previous solution, I think it is good to move the end pointer to the le
 
 Note that using `.splice()` will mutate the original array. But this is unavoidable if we are asked to do an in-place sort of the original array.
 
+## Solution 4: Using filter()
+
+```js
+function zeroToHero(numbers) {
+  const allButZeros = numbers.filter((number) => number);
+  const zerosCount = numbers.filter((number) => !number).length;
+  const zeros = new Array(zerosCount).fill(0);
+  
+  return [...allButZeros, ...zeros]; 
+}
+```
+
+The idea behind this solution is to get all numbers but the zeros, get the number of zeros in the `number` array, create a new array of zeros, and finally return a new array with the numbers and the zeros in the back of the array.
+
+This solution is using more memory (4 arrays) than the other solutions and approaching the problem in a functional and declarative way.
+
 ## Conclusion
 
 This is an excellent problem to level up your skills because it strikes a great balance between having an interesting twist, being relatively easy to solve, and also a wide variety of possible answers.
