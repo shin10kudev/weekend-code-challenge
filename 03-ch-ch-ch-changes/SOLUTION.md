@@ -28,14 +28,11 @@ This is, well, not the most effecient way to do things... because you are loopin
 The [Object.entries()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries) method will convert an object of key-value pairs into an array of arrays where the output data is structured like: `[[key, value], [key, value]]`. Since we now have an array, from here we can utilize JavaScript's powerful array methods, like `.map()` -- and with a little destructuring, we can create a niftly little function like so:
 
 ```js
-const convertObjToArrayOfObjects = (data) => {
-  return Object.entries(data).map(([key, values]) => {
-    return {
-      id: key,
-      ...values,
-    };
-  });
-};
+const convertObjToArrayOfObjects = (data) =>
+  Object.entries(data).map(([key, values]) => ({
+    id: key,
+    ...values,
+  }));
 ```
 
 Interestingly, as stated in the MDN Web docs for Object.entries():
