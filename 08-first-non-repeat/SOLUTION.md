@@ -77,3 +77,34 @@ function firstNonRepeatingChar(string) {
 
 The time complexity for this solution would be O(2n) or O(n) if we simplify.
 Space complexity will be a bit complicated because we are only storing one instance of a value, so even if `n` were `1,000`, if all the entries were `a` we'd only be storing 1 additional value. So average space complexity would be a calculation of n over how many duplicates of each value exist. But worst case, every single item would be a unique value, so worst case space complexity would be `O(n)`.
+
+## Solution 3: Using a HashTable and the find() method
+
+This solution is very similar to the solution 2, but it uses an arrays of chars instead of looping throught the string and use the find method after counting each character in the hash table.
+
+```js
+const getArrayOfChars = (string = '') => string.split('');
+
+const buildCharsCounter = (arrayOfChars) => {
+  const charsCounter = {};
+
+  arrayOfChars.forEach((char) => {
+    if (char in charsCounter) {
+      charsCounter[char] += 1;
+    } else {
+      charsCounter[char] = 1;
+    }
+  });
+
+  return charsCounter;
+};
+
+const getFirstNonRepeatingChar = (string = '') => {
+  const arrayOfChars = getArrayOfChars(string);
+  const charsCounter = buildCharsCounter(arrayOfChars);
+  const isNonRepeatingChar = (char) =>
+    char in charsCounter && charsCounter[char] === 1;
+
+  return arrayOfChars.find(isNonRepeatingChar) || -1;
+};
+```
